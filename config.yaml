@@ -1,0 +1,28 @@
+# Clash Of Clans Bot Configuration
+
+# ADB Configuration
+adb:
+  device_ip: "127.0.0.1"  # BlueStacks default IP
+  device_port: 5555
+  timeout: 10
+
+# Game Settings
+game:
+  min_gold: 50000        # Minimum gold to start attack
+  min_elixir: 50000      # Minimum elixir to start attack
+  target_gold_threshold: 200000  # Stop attacking when village gold >= this
+  target_elixir_threshold: 200000  # Stop attacking when village elixir >= this
+
+# Bot Behavior
+bot:
+  attack_delay: 5        # Delay between attacks (seconds)
+  screenshot_interval: 2 # Screenshot check interval
+  debug_mode: true       # Enable debug logging
+  headless: false        # Disable UI display
+
+# Screen Coordinates (adjust based on your resolution)
+coordinates:
+  attack_button: [640, 720]     # Attack button position
+  next_button: [640, 680]       # Next enemy button
+  home_button: [100, 100]       # Return to home
+  resources_area: [100, 50, 1200, 150]  # [x1, y1, x2, y2]
